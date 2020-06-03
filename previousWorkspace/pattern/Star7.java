@@ -1,0 +1,27 @@
+package pattern;
+
+import java.util.Scanner;
+
+public class Star7 {
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+	    int n=sc.nextInt();
+	    int i,j, k;
+	    for(i=1;i<=n;i++){
+	    	 k=1;
+	        for( j=1;j<=2*n-1;j++){
+	              if(j>=5-i&&j<=3+i) { 
+	            	   
+	                  System.out.print(k);
+	                  k=j<4?++k:--k;
+	              }
+	              else {
+	            	  System.out.print(" ");
+	            	 
+	              }
+	        }
+	        System.out.println();
+	    }
+
+	}
+}
